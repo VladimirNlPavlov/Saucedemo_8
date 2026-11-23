@@ -15,7 +15,7 @@ public class BaseTest {
         options.addArguments("start-maximized");
         //options.addArguments("headless");
 
-        browser = new EdgeDriver();
+        browser = new EdgeDriver(options);
         browser.get("https://www.saucedemo.com/");
         browser.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
     }
